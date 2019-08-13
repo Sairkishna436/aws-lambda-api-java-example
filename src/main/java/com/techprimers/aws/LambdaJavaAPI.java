@@ -10,13 +10,13 @@ public class LambdaJavaAPI implements RequestHandler<Object, GatewayResponse> {
     @Override
     public GatewayResponse handleRequest(Object object, Context context) {
 
-        String message = "Hello from TechPrimers";
+        String message = "Hello First AWS Lambda Java API Sai";
         System.out.println(message);
 
         GatewayResponse response = new GatewayResponse(
                 message,
                 200,
-                Collections.singletonMap("X-Powered-By", "TechPrimers"),
+                Collections.singletonMap("X-Powered-By", "Saikrishna"),
                 false
         );
         return response;
